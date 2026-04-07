@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form sign in</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign-In Form</h2> 
+        <form id="signinForm">
+            <div class="row">
+                <label for="Email">Email</label>
+                <br>
+                <input type="email" id="Email" required placeholder="Enter Email">
+            </div>
+
+            <div class="row">
+                <label for="password">Password</label>
+                <br>
+                <input type="Password" id="Pasword" required placeholder="Enter Password">
+                <span class="toggle" onclick="togglepassword()">
+                    <img id="eyeicon" src="./assets/show.png" alt="show" width="20">
+                </span>
+            </div>
+
+            <div class="row">
+                <button type="Submit">SIGN IN</button>
+            </div>
+
+        <div class="link">do u have already account? <span><a href="#">click here</a></span>
+        </div>
+        </form>
+    </div>
+  <script src="./script.js"></script>  
+</body>
+</html>

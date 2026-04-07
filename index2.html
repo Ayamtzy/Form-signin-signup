@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM SIGN UP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Sign-Up Form</h2>
+        <form id="SignUpForm">
+            <div class="row">
+                <label for="username">username</label>
+                <br>
+                <input type="text" id="username" name="username" required placeholder="Username">
+            </div>
+
+            <div class="row">
+                <label for="email">email</label>
+                <br>
+                <input type="text" id="email" name="email" required placeholder="Email">
+            </div>
+
+
+            <div class="row">
+                <label for="password">password</label>
+                <br>
+                <input type="password" id="password" name="password" required placeholder="password ">
+                <span class="toggle" onclick="togglePassword()">
+                    <img id="eyeIcon" src="./assets/show.png" alt="show" width="20px">
+                </span>
+            </div>
+
+            <div class="row">
+                <label for="password">re-password</label>
+                <br>
+                <input type="password" id="password1" name="password" required placeholder="re-enter password">
+                <span class="toggle" onclick="togglePassword1()">
+                    <img id="eyeIcon1" src="./assets/show.png" alt="show" width="20px">
+                </span>
+            </div>
+            
+            <div class="row">
+                <button type="Submit">SIGN UP</button>
+            </div>
+           
+            <div class="link">
+               Have an account already? <span><a href="./index.html">click here to sign in</a></span>
+           </div>
+        </form>
+    </div>
+
+    <script src="./script2.js"></script>
+</body>
+
+</html>
